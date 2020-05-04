@@ -11,7 +11,7 @@
     </mat-toolbar-row>
   </mat-toolbar>
   <div class="book-card-container">
-    <mat-card class="grow" *ngFor="let book of books; let i = index">
+    <mat-card class="grow item-card" *ngFor="let book of books; let i = index">
       <mat-toolbar color="warn" class="toolbar">
         <mat-toolbar-row>
           <mat-card-title>{{book.title}}</mat-card-title>
@@ -25,7 +25,7 @@
         <P>Genre: {{book.genre}}</P>
         <P>Read: {{book.read}}</P>
       </mat-card-content>
-      <mat-card-actions>
+      <mat-card-actions class="btn-action-grid">
         <button mat-raised-button (click)="deleteBook(book.id)" color="warn">
           Delete
           <mat-icon class="example-icon">clear</mat-icon>

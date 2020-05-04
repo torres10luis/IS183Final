@@ -2,8 +2,6 @@ import { Component, Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { environment } from '../../environments/environment';
 
-import 'rxjs';
-
 @Injectable()
 export class BookService {
 

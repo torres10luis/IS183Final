@@ -17,19 +17,20 @@ import { DocsButtonsComponent } from './docs/docs-buttons/docs-buttons.component
 
 import { HomeComponent } from './home/home.component';
 
-// books
+// books components
 import { BookService } from './books/book.service';
 import { BookComponent } from './books/book/book.component';
 import { BooksComponent } from './books/books.component';
 import { BookCreateComponent } from './books/book-create/book-create.component';
 
-// tanks
-import { TankService } from './tanks/tank.service';
-import { TankComponent } from './tanks/tank/tank.component';
-import { TanksComponent } from './tanks/tanks.component';
-import { TankCreateComponent } from './tanks/tank-create/tank-create.component';
+// beverages components
+import { BeverageService } from './beverages/beverage.service';
+import { BeverageComponent } from './beverages/beverage/beverage.component';
+import { BeveragesComponent } from './beverages/beverages.component';
+import { BeverageCreateComponent } from './beverages/beverage-create/beverage-create.component';
 
-// users
+// users components
+// ...
 
 // Routes
 const appRoutes: Routes = [
@@ -40,12 +41,12 @@ const appRoutes: Routes = [
   { path: 'books', component: BooksComponent },
   { path: 'book/:id', component: BookComponent },
   { path: 'book-create', component: BookCreateComponent },
-  // tanks
-  { path: 'tanks', component: TanksComponent },
-  { path: 'tank/:id', component: TankComponent },
-  { path: 'tank-create', component: TankCreateComponent },
+  // beverages
+  { path: 'beverages', component: BeveragesComponent },
+  { path: 'beverage/:id', component: BeverageComponent },
+  { path: 'beverage-create', component: BeverageCreateComponent },
   // users
-
+  // ...
 ];
 
 @NgModule({
@@ -60,12 +61,12 @@ const appRoutes: Routes = [
     BooksComponent,
     BookCreateComponent,
     BookComponent,
-    // tanks
-    TanksComponent,
-    TankCreateComponent,
-    TankComponent
+    // beverages
+    BeveragesComponent,
+    BeverageCreateComponent,
+    BeverageComponent
     // users
-
+    // ...
   ],
   imports: [
     BrowserModule,
@@ -77,7 +78,8 @@ const appRoutes: Routes = [
   ],
   providers: [
     BookService,
-    TankService
+    BeverageService
+    // ...
   ],
   bootstrap: [AppComponent]
 })

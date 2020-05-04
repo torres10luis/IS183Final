@@ -8,14 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class DocsComponent implements OnInit {
   docs: Object;
   showBookDocs: boolean;
-  showTankDocs: boolean;
   showUserDocs: boolean;
+  showBeverageDocs: boolean;
   constructor() { }
 
   ngOnInit() {
     this.docs = {
       books: [],
-      tanks: [],
       users: []
     }
     this.toggle('toggleBooks');
@@ -396,23 +395,23 @@ export class DocsComponent implements OnInit {
     switch (event) {
       case 'toggleBooks':
         this.showBookDocs = true;
-        this.showTankDocs = false;
         this.showUserDocs = false;
-        break;
-      case 'toggleTanks':
-        this.showTankDocs = true;
-        this.showBookDocs = false;
-        this.showUserDocs = false;
+        this.showBeverageDocs = false;
         break;
       case 'toggleUsers':
         this.showUserDocs = true;
         this.showBookDocs = false;
-        this.showTankDocs = false;
+        this.showBeverageDocs = false;
+        break;
+      case 'toggleBeverages':
+        this.showBeverageDocs = true;
+        this.showBookDocs = false;
+        this.showUserDocs = false;
         break;
       default:
         this.showBookDocs = true;
-        this.showTankDocs = false;
         this.showUserDocs = false;
+        this.showBeverageDocs = false;
         break;
     }
   }
