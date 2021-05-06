@@ -23,7 +23,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Get a list of books',
         method: 'GET',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/book',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/book',
         payload: 'none',
         params: 'none',
         response: [{
@@ -69,7 +69,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Get a single book',
         method: 'GET',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/book/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/book/id/<id>',
         payload: 'none',
         params: 'id',
         response: {
@@ -89,7 +89,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Update a book',
         method: 'PUT',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/book/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/book/id/<id>',
         payload: {
           'title': 'some title',
           'genre': 'some genre',
@@ -114,7 +114,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Create a book',
         method: 'POST',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/book',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/book',
         payload: {
           'title': 'some title',
           'genre': 'some genre',
@@ -139,7 +139,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Delete a book',
         method: 'DELETE',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/book/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/book/id/<id>',
         payload: 'none',
         params: 'id',
         response: {
@@ -152,7 +152,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Get a list of tanks',
         method: 'GET',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/tank',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/tank',
         payload: 'none',
         params: 'none',
         response: [
@@ -193,7 +193,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Get a single tank',
         method: 'GET',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/tank/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/tank/id/<id>',
         payload: 'none',
         params: 'id',
         response: {
@@ -211,7 +211,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Update a tank',
         method: 'PUT',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/tank/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/tank/id/<id>',
         payload: {
           'tank_name': 'some tank name',
           'serial_number': 'some tank serial',
@@ -233,7 +233,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Create a tank',
         method: 'POST',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/tank',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/tank',
         payload: {
           'tank_name': 'some tank name2',
           'serial_number': 'some tank serial2',
@@ -255,7 +255,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Delete a tank',
         method: 'DELETE',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/tank/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/tank/id/<id>',
         payload: 'none',
         params: 'id',
         response: {
@@ -268,7 +268,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Get a list of users',
         method: 'GET',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/user',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/user',
         payload: 'none',
         params: 'none',
         response: [
@@ -292,7 +292,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Get a single user',
         method: 'GET',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/user/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/user/id/<id>',
         payload: 'none',
         params: 'id',
         response: {
@@ -313,7 +313,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Update a user',
         method: 'PUT',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/user/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/user/id/<id>',
         payload: {
           'email': 'asfdssssssss',
           'username': 'asdf',
@@ -346,7 +346,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Create a user',
         method: 'POST',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/user',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/user',
         payload: {
           'email': 'lphan@shift3t3ech2.com',
           'username': 'lphan ',
@@ -371,7 +371,7 @@ export class DocsComponent implements OnInit {
       {
         description: 'Delete a user',
         method: 'DELETE',
-        endpoint: 'http://staging-book-api.us-west-1.elasticbeanstalk.com/api/v1/user/id/<id>',
+        endpoint: 'http://bookapi-env.eba-fc5mwzgy.us-west-1.elasticbeanstalk.com/api/v1/user/id/<id>',
         payload: 'none',
         params: 'id',
         response: {
