@@ -28,8 +28,15 @@ export class BeveragesComponent implements OnInit {
     this.router.navigate(['beverage-create']);
   }
 
+
   deleteBeverage(id: string) {
-
+    this.beverageService.deleteBeverage(id).then((resp) => {
+      if (resp) {
+        this.beverages = this.beverages.filter((beverage) => {
+          return beverage['id'] !== id;
+        });
+      }
+    });
   }
-
+  
 }
